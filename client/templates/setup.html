@@ -1,11 +1,12 @@
 <template name = 'setup'>
     <div class='row'>
         <div class="col-sm-4">
-            <h2>Setup</h2>
-            <ul>
-            </ul>
+                <p><a href="/setup/workout">Setup Workout</a></p>
+                <p><a href="/setup/plan">Create Plan</a></p>
+                <p><a href="/setup/monthly">Create Monthly Plan</a></p>
         </div>
         <div class="col-sm-8">
+            {{> yield "setupDetail"}}
         </div>
     </div>
 </template>
