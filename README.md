@@ -13,3 +13,8 @@ for why am I doing this?
 * Use my iphone for work out instead of carrying a paper.
 * Create monthly work out plan and send update to the trainer.
 * May be sell the software back to the trainer and get my money back. :)
+
+Framework
+---
+
+This is developed with MeteorJS as I said in Why section.
