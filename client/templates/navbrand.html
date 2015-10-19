@@ -1,0 +1,15 @@
+<template name="navBrand">
+    <a class="navbar-brand" href="{{ pathFor 'home' }}">Workout Buddy</a>
+</template>
+
+<template name='navItems'>
+    <li class="{{ activeIfTemplateIs 'workout' }}">
+        <a href="{{ pathFor 'workout'}}">Workout</a>
+    </li>
+    <li class="{{ activeIfTemplateIs 'setup' }}">
+        <a href="{{pathFor 'setup'}}">Setup</a>
+    </li>
+    <li class="{{ activeIfTemplateIs 'about' }}">
+        <a href="{{pathFor 'about'}}">About</a>
+    </li>
+</template>
