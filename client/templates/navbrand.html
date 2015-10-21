@@ -6,8 +6,14 @@
     <li class="{{ activeIfTemplateIs 'Workout' }}">
         <a href="{{ pathFor 'workout'}}">Workout</a>
     </li>
-    <li class="{{ activeIfTemplateIs 'Setup' }}">
+    <li class="dropdown activeIfTemplateIs 'Setup' }}">
         <a href="{{pathFor 'setup'}}">Setup</a>
+            <div class="dropdown-menu">
+                <ul role="menu" aria-labelledby="dLabel">
+                    <li>One</li>
+                    <li>Two</li>
+                </ul>
+            </div>
     </li>
     <li class="{{ activeIfTemplateIs 'About' }}">
         <a href="{{pathFor 'about'}}">About</a>
