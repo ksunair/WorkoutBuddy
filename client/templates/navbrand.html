@@ -10,14 +10,11 @@
         <div class="dropdown {{ activeIfTemplateIs 'Setup' }}">
             <a data-toggle="dropdown" href="#">Setup</a>
             <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-                <li role="presentation"><a tabindex="-1" role="menuitem" href="{{ pathFor 'setup'}}">Workout</a></li>
+                <li role="presentation"><a tabindex="-1" role="menuitem" href="/setup/workout">Workout</a></li>
                 <li role="presentation"><a tabindex="-1" role="menuitem" href="{{ pathFor 'setup'}}">Create plan</a></li>
                 <li role="presentation"><a tabindex="-1" role="menuitem" href="{{ pathFor 'setup'}}">Create Monthly plan</a></li>
             </ul>
         </div>
-    </li>
-    <li class="dropdown activeIfTemplateIs 'Setup' }}">
-        <a href="{{pathFor 'setup'}}">Setup</a>
     </li>
     <li class="{{ activeIfTemplateIs 'About' }}">
         <a href="{{pathFor 'about'}}">About</a>
