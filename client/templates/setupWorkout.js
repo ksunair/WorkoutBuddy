@@ -1,5 +1,6 @@
-Template.setupWorkout.helpers({
-   'submit form': function(e){
+Template.setupWorkout.events({
+   'submit .new-workout': function(e){
+       console.log('Hello');
        e.preventDefault();
 
        var singleworkout = {
@@ -14,6 +15,8 @@ Template.setupWorkout.helpers({
            notes: $(e.target).find('[name=notes]').val()
        };
 
-       Exercises.insert(singleworkout);
+       console.log(singleworkout);
+
+       Exercises.insertNewExercise(singleworkout);
    }
 });
