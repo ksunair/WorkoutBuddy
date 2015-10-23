@@ -1,10 +1,16 @@
 <template name = 'setup'>
     <div class='row'>
         <div class="col-sm-4">
-            //show plans or work outs created by the user
+            {{#each exercises}}
+                {{> exerciseNames}}
+            {{/each}}
         </div>
         <div class="col-sm-8">
             {{> yield "setupDetail"}}
         </div>
     </div>
+</template>
+
+<template name="exerciseNames">
+    {{name}}
 </template>

@@ -1,3 +1,20 @@
-<template name = 'setupWorkout'>
-    <p>Hello</p>
+<template name='setupWorkout'>
+    <form class="main form page">
+        <div class="form-group">
+            <input type="text" name="name" placeholder="Exercise Name"/><br>
+            <input type="text" name="sets" placeholder="Number of Sets"/><br>
+            Set 1:<br>
+            <input type="text" name="reps1" placeholder="Reps"/><br>
+            <input type="text" name="weight1" placeholder="Weight"/><br>
+            Set 2:<br>
+            <input type="text" name="reps2" placeholder="Reps"/><br>
+            <input type="text" name="weight2" placeholder="Weight"/><br>
+            Set 3:<br>
+            <input type="text" name="reps3" placeholder="Reps"/><br>
+            <input type="text" name="weight3" placeholder="Weight"/><br>
+            <br/>
+            <input type="text" name="notes" placeholder="Notes"/><br>
+        </div>
+        <input type="submit" value="Submit" class="btn btn-primary"/>
+    </form>
 </template>
