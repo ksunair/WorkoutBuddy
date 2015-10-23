@@ -17,6 +17,6 @@ Template.setupWorkout.events({
 
        console.log(singleworkout);
 
-       Exercises.insertNewExercise(singleworkout);
+       Meteor.call('insertNewExercise', singleworkout);
    }
 });
