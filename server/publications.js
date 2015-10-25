@@ -1,5 +1,5 @@
 Meteor.publish('exercises', function () {
-    return Exercises.find();
+    return Exercises.find({owner: this.userId});
 });
 
 Meteor.methods({

@@ -1,6 +1,5 @@
 Template.setupWorkout.events({
    'submit .new-workout': function(e){
-       console.log('Hello');
        e.preventDefault();
 
        var singleworkout = {
@@ -12,7 +11,8 @@ Template.setupWorkout.events({
            weight2: $(e.target).find('[name=weight2]').val(),
            reps3: $(e.target).find('[name=reps3]').val(),
            weight3: $(e.target).find('[name=weight3]').val(),
-           notes: $(e.target).find('[name=notes]').val()
+           notes: $(e.target).find('[name=notes]').val(),
+           owner: Meteor.userId()
        };
 
        console.log(singleworkout);
