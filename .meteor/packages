@@ -21,3 +21,4 @@ underscore
 iron:router
 accounts-password
 accounts-ui
+aldeed:simple-schema
