@@ -22,3 +22,6 @@ iron:router
 accounts-password
 accounts-ui
 aldeed:simple-schema
+aldeed:collection2
+manuel:viewmodel
+aldeed:autoform
