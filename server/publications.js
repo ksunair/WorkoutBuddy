@@ -5,7 +5,6 @@ Meteor.publish('exercises', function () {
 
 Meteor.methods({
    insertNewExercise: function(singleWorkout) {
-       Console.log("insert called");
        Exercises.insert(singleWorkout);
    }
 });

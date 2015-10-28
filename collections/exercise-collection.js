@@ -18,7 +18,7 @@ ExercisesSchema = new SimpleSchema({
         label: 'Notes',
         optional: true
     },
-    "ownerId": {
+    "owner": {
         type: String,
         autoform: {
             type: "hidden"

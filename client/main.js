@@ -7,7 +7,7 @@ Meteor.subscribe('exercises');
 AutoForm.hooks({
     insertExercisesForm: {
         formToDoc: function(doc) {
-            doc.ownerId = Meteor.userId();
+            doc.owner = Meteor.userId();
             console.log(doc.ownerId);
             return doc
         }
