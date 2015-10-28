@@ -25,3 +25,5 @@ aldeed:simple-schema
 aldeed:collection2
 manuel:viewmodel
 aldeed:autoform
+msavin:mongol
+ongoworks:security

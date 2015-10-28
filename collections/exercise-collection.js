@@ -5,32 +5,23 @@ ExercisesSchema = new SimpleSchema({
         type: String,
         label: 'Name'
     },
-    "sets": {
-        type: Number,
-        label: 'Sets'
-    },
     "workout.$.weight": {
         type: String,
         label: 'Weight'
     },
     "workout.$.reps": {
         type: String,
-        label: 'Weight'
-    },
-    "warmup": {
-        type: String,
-        label: 'Warmup',
-        optional: true
+        label: 'Reps'
     },
     "notes": {
         type: String,
         label: 'Notes',
         optional: true
-    },
-    "owner": {
-        type: String,
-        label: 'User Id'
     }
 });
 
 Exercises.attachSchema( ExercisesSchema );
+
+Exercises.permit('insert').ifLoggedIn().apply();
+Exercises.permit('update').ifLoggedIn().apply();
+Exercises.permit('remove').ifLoggedIn().apply();
