@@ -1,11 +1,20 @@
 <template name = 'workout'>
     <div class='row'>
         <div class="col-sm-4">
-            <h2>Workout</h2>
-            <ul>
-            </ul>
+            {{#each workoutplans}}
+                {{> workoutplanNames}}
+            {{/each}}
         </div>
         <div class="col-sm-8">
+            {{> yield "workoutplanDetail"}}
         </div>
     </div>
+</template>
+
+<template name="workoutplanNames">
+    <a href="/setup/workoutplan/{{_id}}">{{name}}</a><br>
+</template>
+
+<template name="workoutplanInsert">
+
 </template>

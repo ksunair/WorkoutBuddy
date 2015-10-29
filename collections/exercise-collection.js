@@ -32,3 +32,16 @@ Exercises.permit('insert').ifLoggedIn().apply();
 Exercises.permit('update').ifLoggedIn().apply();
 Exercises.permit('remove').ifLoggedIn().apply();
 
+WorkoutPlan = new Meteor.Collection('workoutplans');
+
+WorkoutPlanSchema = new SimpleSchema({
+    "name": {
+        type: String,
+        label: 'Name'
+    },
+    "workouts$exercise": {
+        type: String
+    }
+});
+
+WorkoutPlan.attachSchema( WorkoutPlanSchema );
