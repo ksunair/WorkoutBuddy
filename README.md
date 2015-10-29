@@ -18,3 +18,9 @@ Framework
 ---
 
 This is developed with MeteorJS as I said in Why section.
+
+References
+---
+http://iron-meteor.github.io/iron-router/#rendering-templates-with-data
+https://www.youtube.com/watch?v=2mZGCrRkTEQ
+https://github.com/aldeed/meteor-autoform
