@@ -6,11 +6,19 @@
             {{/each}}
         </div>
         <div class="col-sm-8">
-            {{> quickForm collection="Exercises" id="insertExercisesForm" type="method" meteormethod="insertNewExercise"}}
+            {{> yield "setupDetail"}}
         </div>
     </div>
 </template>
 
 <template name="exerciseNames">
     <a href="/setup/workout/{{_id}}">{{name}}</a><br>
+</template>
+
+<template name='setupWorkout'>
+    {{> quickForm collection="Exercises" id="insertExercisesForm" type="method" meteormethod="insertNewExercise"}}
+</template>
+
+<template name="updateWorkout">
+    {{> quickForm collection="Exercises" doc=this id="updateBookForm" type="update"}}
 </template>
